@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematch</title>
+</head>
+<body>
+    
+    <h1>Cinematch - Gerador de filmes</h1>
+
+
+    <h2>Digite um termo</h2>
+    <input type="text" name="termo" id="termo" />
+<!-- 
+    <label for="genero-terror">Terror</label>
+    <input id="genero-terror" type="checkbox" name="genero-preferido" value="terror" />
+
+    <br/>
+
+    <label for="genero-comedia">Comédia</label>
+    <input id="genero-comedia" type="checkbox" name="genero-preferido" value="comedia" />
+
+    <h2>Qual opção você deseja?</h2>
+
+    <label for="opcao-serie">Série</label>
+    <input id="opcao-serie" type="checkbox" name="opcao" value="serie" />
+
+    <br/>
+
+    <label for="opcao-filme">Filme</label>
+    <input id="opcao-filme" type="checkbox" name="opcao" value="filme" />
+
+    <h2>Qual a classificação indicativa?</h2>
+
+    <label for="indicacao-maior">Maior de 18 anos</label>
+    <input id="indicacao-maior" type="radio" name="indicacao" value="maior" /> 
+
+    <br />
+
+    <label for="indicacao-menor">Menor de 18 anos</label>
+    <input id="indicacao-menor" type="radio" name="indicacao" value="menor" />
+
+    <br /> -->
+
+    <button id="btn-gerar" type="button">Gerar</button>
+</body>
+
+<script>
+    const btn = document.getElementById("btn-gerar");
+
+    btn.addEventListener('click', () => {
+
+        const termo = document.getElementById('termo');
+
+        window.location.href = "/resultado.html?p=" + termo.value;
+
+    })
+</script>
+</html>
